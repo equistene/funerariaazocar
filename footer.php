@@ -6,7 +6,7 @@
 
 <footer class="bg-blue-950 text-white py-10">
 
-	<div class="container mx-auto grid grid-cols-4 ">
+	<div class="container mx-auto grid grid-cols-4">
 
 		<div class="logo">
 			<img src="https://funerariaazocar.cl/wp-content/uploads/2017/12/logo-funeraria.png" alt="">
