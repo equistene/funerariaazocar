@@ -15,7 +15,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           protocol: ftps
-          server: 69.163.216.134
+          server: dryden.dreamhost.com
           port: 22
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
