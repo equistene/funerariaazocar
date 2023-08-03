@@ -20,3 +20,4 @@ jobs:
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
           server-dir: /home/dh_zwkysm/funerariaazocar.dreamhosters.com/wp-content/themes/funeraria-theme/
+          timeout: 60000
