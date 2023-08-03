@@ -14,10 +14,10 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          protocol: ftps
+          protocol: sftp
           server: dryden.dreamhost.com
           port: 22
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /home/dh_zwkysm/funerariaazocar.dreamhosters.com/wp-content/themes/funeraria-theme/
+          server-dir: /home/dh_zwkysm/funerariaazocar.dreamhosters.com/wp-content/themes/funeraria-theme
           timeout: 60000
