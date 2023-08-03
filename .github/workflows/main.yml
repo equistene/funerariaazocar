@@ -21,4 +21,4 @@ jobs:
           password: ${{ secrets.ftp_password }}
           server-dir: /home/dh_zwkysm/funerariaazocar.dreamhosters.com/wp-content/themes/funeraria-theme/
           timeout: 60000
-          dry-run: false
+          dry-run: true
