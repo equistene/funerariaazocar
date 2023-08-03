@@ -14,7 +14,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          protocol: sftp
+          protocol: ftps
           server: dryden.dreamhost.com
           port: 22
           username: ${{ secrets.ftp_user }}
