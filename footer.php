@@ -6,8 +6,10 @@
 
 <footer class="bg-gray-200 text-gray-900 py-10">
 
+	
+
 	<div class="container mx-auto">
-		<div class="flex items-start items-center gap-4">
+		<div class="flex items-center gap-4">
 			<div class="logo">
 				<img src="https://funerariaazocar.cl/wp-content/uploads/2017/12/logo-funeraria.png" alt="">
 			</div>

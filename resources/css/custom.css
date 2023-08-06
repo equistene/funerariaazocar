@@ -40,3 +40,12 @@ article > *:not(.entry-content),
         }
     }
 }
+
+
+.title{
+    @apply m-0 p-0 mb-2 text-2xl
+}
+
+.icon img, .icon svg{
+    @apply max-h-10 w-auto
+}
