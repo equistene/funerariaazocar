@@ -7,16 +7,9 @@
   \*****************************/
 /***/ (() => {
 
-// Navigation toggle
-window.addEventListener("load", function () {
-  var main_navigation = document.querySelector("#primary-menu");
-  document.querySelector("#primary-menu-toggle").addEventListener("click", function (e) {
-    e.preventDefault();
-    main_navigation.classList.toggle("hidden");
-  });
-});
 (function ($) {
   $(document).ready(function () {
+    console.log("hola");
     $(".single-item").slick({
       infinite: true,
       slidesToShow: 1,

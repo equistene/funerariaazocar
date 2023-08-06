@@ -37,6 +37,18 @@
         max-width: 1440px
     }
 }
+.visible {
+    visibility: visible
+}
+.static {
+    position: static
+}
+.fixed {
+    position: fixed
+}
+.absolute {
+    position: absolute
+}
 .relative {
     position: relative
 }
@@ -46,14 +58,11 @@
 .top-1 {
     top: 0.25rem
 }
-.m-8 {
-    margin: 2rem
-}
 .m-0 {
     margin: 0px
 }
-.m-2 {
-    margin: 0.5rem
+.m-8 {
+    margin: 2rem
 }
 .mx-auto {
     margin-left: auto;
@@ -77,6 +86,9 @@
 .mb-12 {
     margin-bottom: 3rem
 }
+.mb-2 {
+    margin-bottom: 0.5rem
+}
 .mb-4 {
     margin-bottom: 1rem
 }
@@ -86,11 +98,20 @@
 .mt-4 {
     margin-top: 1rem
 }
-.mb-2 {
-    margin-bottom: 0.5rem
+.mr-4 {
+    margin-right: 1rem
+}
+.ml-4 {
+    margin-left: 1rem
 }
 .block {
     display: block
+}
+.inline-block {
+    display: inline-block
+}
+.inline {
+    display: inline
 }
 .flex {
     display: flex
@@ -119,8 +140,8 @@
 .h-4 {
     height: 1rem
 }
-.max-h-9 {
-    max-height: 2.25rem
+.h-auto {
+    height: auto
 }
 .max-h-10 {
     max-height: 2.5rem
@@ -140,6 +161,9 @@
 .max-w-sm {
     max-width: 24rem
 }
+.max-w-full {
+    max-width: 100%
+}
 .flex-1 {
     flex: 1 1 0%
 }
@@ -158,14 +182,19 @@
 .list-disc {
     list-style-type: disc
 }
-.grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr))
+.columns-2 {
+    -moz-columns: 2;
+         columns: 2
 }
-.grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr))
+.columns-1 {
+    -moz-columns: 1;
+         columns: 1
 }
 .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr))
+}
+.grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr))
 }
 .flex-col {
     flex-direction: column
@@ -184,9 +213,6 @@
 }
 .justify-between {
     justify-content: space-between
-}
-.gap-10 {
-    gap: 2.5rem
 }
 .gap-2 {
     gap: 0.5rem
@@ -239,11 +265,11 @@
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
-.p-4 {
-    padding: 1rem
-}
 .p-0 {
     padding: 0px
+}
+.p-4 {
+    padding: 1rem
 }
 .px-3 {
     padding-left: 0.75rem;
@@ -290,10 +316,6 @@
 .text-xl {
     font-size: 1.25rem
 }
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem
-}
 .font-bold {
     font-weight: 700
 }
@@ -305,9 +327,6 @@
 }
 .font-semibold {
     font-weight: 600
-}
-.uppercase {
-    text-transform: uppercase
 }
 .leading-tight {
     line-height: 1.25
@@ -342,17 +361,20 @@
 .outline {
     outline-style: solid
 }
+.blur {
+    --tw-blur: blur(8px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
 .transition-all {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms
 }
-.transition {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms
+.max-w-wide {
+    max-width: 1280px
 }
 .alignfull {
     margin: 2rem calc(50% - 50vw) !important;
@@ -419,6 +441,9 @@ body {
     background-color: rgb(226 232 240 / var(--tw-bg-opacity))
 }
 @media (min-width: 782px) {
+    .md\:sticky {
+        position: sticky
+    }
     .md\:my-6 {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem
@@ -429,11 +454,19 @@ body {
     .md\:w-1\/2 {
         width: 50%
     }
+    .md\:columns-2 {
+        -moz-columns: 2;
+             columns: 2
+    }
     .md\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr))
     }
     .md\:gap-10 {
         gap: 2.5rem
+    }
+    .md\:px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem
     }
     .md\:text-3xl {
         font-size: 1.875rem;
@@ -441,6 +474,9 @@ body {
     }
 }
 @media (min-width: 960px) {
+    .lg\:sticky {
+        position: sticky
+    }
     .lg\:grid-cols-4 {
         grid-template-columns: repeat(4, minmax(0, 1fr))
     }
@@ -448,4 +484,13 @@ body {
         font-size: 3rem;
         line-height: 1
     }
+}
+.\[\&\>li\]\:mb-4>li {
+    margin-bottom: 1rem
+}
+.\[\&\>li\]\:mb-2>li {
+    margin-bottom: 0.5rem
+}
+.\[\&\>li\]\:list-disc>li {
+    list-style-type: disc
 }
