@@ -1,8 +1,11 @@
-<section class="my-10 py-10 md:py-20 bg-slate-100 overflow-x-hidden">
+<section class="my-10 py-10 md:py-10 bg-slate-50 overflow-x-hidden">
   <div class="container mx-auto">
-    <h2 class="title mb-4 text-center">¿En qué podemos ayudarte?</h2>
+    <div class="intro-section text-center mb-2">
+      <h2 class="title">¿En qué podemos ayudarte?</h2>
+      <p>Contamos con una serie de Lorem ipsum dolor sit.</p>
+    </div>
 
-    <div class="slider-services pt-5 md:pt-10">
+    <div class="slider-services pt-5 md:pt-5">
       <?php for ($i= 0 ;  $i < 9; $i++) : ?>
         <div class="card border border-blue-950 rounded-md overflow-hidden max-w-md border-slate-200">
           <a href="#" class="card-service">

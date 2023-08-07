@@ -21,30 +21,41 @@
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-	<header class="py-4">
+
+	<header class="bg-gray-50 border-b-1 border-blue-950 shadow-md sticky top-0 z-50">
 		<div class="container mx-auto flex justify-between align-top">
-			<div class="logo">
-				<a href="#">
-					<img src="<?php bloginfo('template_url'); ?>/images/logo-horizontal.png" alt="Funeraria Azócar" class="w-auto max-h-20">
+			<div class="logo py-2">
+				<a href="#" class="block hover:opacity-60 transition-all">
+					<img src="<?php bloginfo('template_url'); ?>/images/logo-horizontal.png" alt="Funeraria Azócar" class="w-auto max-h-16 md:max-h-20">
 				</a>
 			</div>
 			
 			<div class="row hidden md:block">
-				<nav>
-					<ul class="flex justify-end gap-4">
+				<nav class="secondary-menu">
+					<ul>
 						<li><a href="#">Conócenos</a></li>
 						<li><a href="#">Repatriaciones</a></li>
 						<li><a href="#">Convenios</a></li>
-						<li><a href="#">Beneficios</a></li>
-						<li><a href="#">Contáctanos</a></li>
+						<li><a href="#">Beneficios</a></li>						
+						<li><a href="#">Encuentrános</a></li>						
 					</ul>
 				</nav>
 
-				<nav>
-					<ul class="flex justify-end gap-4">
-						<li><a href="#">Necesito un servicio</a></li>
+				<nav class="main-menu">
+					<ul>
+						<li>
+							<a href="#">Necesito un servicio</a>
+							<ul>
+								<li><a href="#">Memorial</a></li>
+								<li><a href="#">Eternal</a></li>
+								<li><a href="#">Clásico</a></li>
+								<li><a href="#">Tradicional</a></li>
+								<li><a href="#">Estándar</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Planificar en vida</a></li>
-						<li><a href="#">Qué hacer después</a></li>						
+						<li><a href="#">Qué hacer después</a></li>
+						<li><a href="#">Contáctanos</a></li>
 					</ul>
 				</nav>
 			</div>

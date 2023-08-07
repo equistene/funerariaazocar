@@ -1,0 +1,97 @@
+$primary : #001d51;
+$secondary : #3b4e7b;
+$light: #e9eeff;
+$yellow: #f5dc01;
+
+nav.main-menu{  
+  margin: 0 0 1rem 0;
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+    font-family: 'Gotham Pro Bold';
+    li{
+      position: relative;
+      background: $light;      
+      border-radius: 2rem;
+      overflow: hidden;
+      &>a{        
+        display: block;  
+        padding: .3rem 1.2rem;                    
+        &:hover{          
+          color: white;
+        }
+      }
+      &:hover{        
+        background-color: $primary;
+        color: #FFF;
+        ul{
+          display: block;          
+        }
+      }      
+      ul{
+        background-color: #FFF;
+        padding: 1rem;
+        border-radius: .5rem;        
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 100%;      
+        @apply shadow-md;
+        li{
+          all:unset;
+          display: block;
+          width: 100%;
+          &:hover{
+            background-color: none !important;
+          }
+          a{            
+            all: unset;
+            cursor: pointer;
+            display: block;
+            color: $primary;
+            &:hover{
+              background-color: white !important;
+              text-decoration: underline;
+              color: #000;
+            }
+          }          
+        }
+      }  
+      &:last-child{
+        @apply bg-primary text-white;
+        a{
+          &:hover{            
+            @apply bg-yellow text-primary;
+          }
+        }
+      }    
+    }
+  }
+}
+
+nav.secondary-menu{
+  margin: 0;
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: .25rem;
+    padding: 0 0 .3rem 0;
+    @apply font-semibold;
+    li{
+      a{
+        display: block;
+        padding: .4rem;
+        font-size: 0.8rem;
+        color: #444;
+        text-transform: uppercase;
+        &:hover{
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -84,7 +84,7 @@ ul.slick-dots li.slick-active{
 }
 
 .button-fa-primary{
-    @apply bg-primary text-white text-center rounded-full p-2 hover:bg-secondary w-full mt-4 block
+    @apply bg-primary text-white text-center rounded-full p-2 hover:bg-yellow w-full mt-4 block hover:text-primary font-semibold
 }
 
 .card-service{
@@ -101,4 +101,8 @@ ul.slick-dots li.slick-active{
 
 p, ul, li{
     @apply text-lg
+}
+
+nav.main-menu{
+    
 }
