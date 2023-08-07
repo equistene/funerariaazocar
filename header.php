@@ -53,7 +53,7 @@
 								<li><a href="<?php echo home_url(); ?>/servicios/estandar">Estándar</a></li>
 							</ul>
 						</li>
-						<li><a href="<?php echo home_url(); ?>/">Planificar en vida</a></li>
+						<li><a href="<?php echo home_url(); ?>/planifica">Planificar en vida</a></li>
 						<li>
 							<a href="<?php echo home_url(); ?>/post-funeral">Qué hacer después</a>
 							<ul>
@@ -61,7 +61,7 @@
 								<li><a href="#">Apoyo en el duelo</a></li>
 							</ul>
 						</li>
-						<li><a href="<?php echo home_url(); ?>/">Contáctanos</a></li>
+						<li><a href="<?php echo home_url(); ?>/contacto">Contáctanos</a></li>
 					</ul>
 				</nav>
 			</div>
