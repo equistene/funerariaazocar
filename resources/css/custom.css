@@ -100,7 +100,7 @@ ul.slick-dots li.slick-active{
 }
 
 p, ul, li{
-    @apply text-lg
+    @apply text-lg text-[#444]
 }
 
 nav.main-menu{

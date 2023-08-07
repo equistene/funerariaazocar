@@ -2,7 +2,7 @@
   <div class="container mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
       <div class="col">
-        <img src="http://unsplash.it/800/400?gravity=center" class="max-w-full h-auto" alt="">
+        <img src="http://unsplash.it/800/400?gravity=center" class="max-w-full h-auto rounded-lg" alt="">
       </div>
       <div class="col">
         <h2 class="title">Nuestros servicios</h2>

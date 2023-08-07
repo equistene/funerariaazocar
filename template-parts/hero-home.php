@@ -5,9 +5,9 @@
         <img class="rounded-lg" src="https://funerariaazocar.cl/wp-content/uploads/2017/12/banner-2.jpg" alt="">
       </div>
       <div class="col text-center">
-        <h2 class="text-3xl md:text-5xl mb-1 md:mb-2 gotham-bold">Estamos para <strong>ayudarte</strong></h2>
-        <p class="text-xl leading-5 md:max-w-[40ch] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis tenetur velit corrupti nemo eaque, itaque quo asperiores at dolorem odio debitis veritatis.</p>
-        <a class="button-fa-primary max-w-[400px] mx-auto" href="#">Conoce nuestros servicios</a>
+        <h2 class="text-3xl md:text-5xl mb-1 md:mb-2 text-primary gotham-bold">Estamos para acompañarte</h2>
+        <p class="text-xl leading-5 md:max-w-[40ch] mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur magnam. Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="button-fa-primary max-w-[400px] mx-auto" href="#">Te ayudamos →</a>
       </div>
     </div>
   </div>
