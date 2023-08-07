@@ -5,7 +5,7 @@
         <img src="http://unsplash.it/800/600?gravity=center" alt="">
       </div>
       <div class="col">
-        <h2>Lorem ipsum dolor sit.</h2>
+        <h2 class="title">Lorem ipsum dolor sit.</h2>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fuga harum asperiores odit enim debitis et at hic numquam, ab ut explicabo sapiente. Vitae?</p>
 

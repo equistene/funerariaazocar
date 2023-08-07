@@ -6,6 +6,10 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/fonts/GothamPro.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/fonts/GothamPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+
 	<?php wp_head(); ?>
 </head>
 
@@ -21,11 +25,11 @@
 		<div class="container mx-auto flex justify-between align-top">
 			<div class="logo">
 				<a href="#">
-					<img src="https://funerariaazocar.cl/wp-content/uploads/2017/12/logo-funeraria.png" alt="">
+					<img src="<?php bloginfo('template_url'); ?>/images/logo-horizontal.png" alt="Funeraria Azócar" class="w-auto max-h-20">
 				</a>
 			</div>
 			
-			<div class="row">
+			<div class="row hidden md:block">
 				<nav>
 					<ul class="flex justify-end gap-4">
 						<li><a href="#">Conócenos</a></li>

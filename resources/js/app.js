@@ -2,12 +2,21 @@
   $(document).ready(function () {
     console.log("hola");
 
-    $(".single-item").slick({
+    $(".slider-services").slick({
       infinite: true,
-      slidesToShow: 1,
+      slidesToShow: 5,
       slidesToScroll: 1,
-      dots: false,
+      dots: true,
       arrows: false,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
   });
 
