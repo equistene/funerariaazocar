@@ -46,7 +46,7 @@ article > *:not(.entry-content),
 }
 
 .title{
-    @apply m-0 p-0 mb-2 text-3xl font-bold text-primary gotham-bold
+    @apply m-0 p-0 mb-2 text-3xl font-bold text-primary gotham-bold leading-8
 }
 
 .icon img, .icon svg{
@@ -84,7 +84,7 @@ ul.slick-dots li.slick-active{
 }
 
 .button-fa-primary{
-    @apply bg-primary text-white text-center rounded-full p-2 hover:bg-yellow w-full mt-4 block hover:text-primary font-semibold
+    @apply bg-primary text-base text-white text-center rounded-full p-2 hover:bg-yellow w-full mt-4 block hover:text-primary font-semibold
 }
 
 .card-service{
@@ -100,7 +100,7 @@ ul.slick-dots li.slick-active{
 }
 
 p, ul, li{
-    @apply text-lg text-[#444]
+    @apply text-lg text-[#444] leading-tight
 }
 
 nav.main-menu{

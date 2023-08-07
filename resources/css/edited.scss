@@ -4,7 +4,7 @@ $light: #e9eeff;
 $yellow: #f5dc01;
 
 nav.main-menu{  
-  margin: 0 0 1rem 0;
+  margin: 0;
   ul{
     display: flex;
     justify-content: flex-end;
@@ -92,6 +92,33 @@ nav.secondary-menu{
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+nav.nav-footer{
+  ul{
+    @apply flex justify-start items-end gap-4;
+    li{
+      a{
+        @apply block text-sm;
+        &:hover{
+          @apply underline;
+        }
+      }
+    }
+  }
+}
+
+footer .sociales{
+  @apply flex justify-end items-center gap-4 flex-1; 
+  a{
+    @apply block;
+    svg{
+      @apply max-h-8 w-auto fill-primary
+    }
+    &:hover{
+      @apply opacity-50;
     }
   }
 }
