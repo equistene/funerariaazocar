@@ -83,28 +83,28 @@
 		<nav class="menu-mobile">
 			<ul>
 				<li>
-					<a href="#">Necesito un servicio</a>
+					<a href="<?php echo home_url(); ?>/servicios/">Necesito un servicio</a>
 				</li>
 				<li>
-					<a href="#">Planificar en vida</a>
+					<a href="<?php echo home_url(); ?>/planificar">Planificar en vida</a>
 				</li>
 				<li>
-					<a href="#">Qué hacer después</a>
+					<a href="<?php echo home_url(); ?>/post-funeral">Qué hacer después</a>
 				</li>			
 				<li>
-					<a href="#">Repatriaciones</a>
+					<a href="<?php echo home_url(); ?>/repatriaciones">Repatriaciones</a>
 				</li>
 				<li>
-					<a href="#">Beneficios</a>
+					<a href="<?php echo home_url(); ?>/beneficios">Beneficios</a>
 				</li>
 				<li>
-					<a href="#">Convenios</a>
+					<a href="<?php echo home_url(); ?>/convenios">Convenios</a>
 				</li>
 				<li>
-					<a href="#">Conócenos</a>
+					<a href="<?php echo home_url(); ?>/nosotros">Conócenos</a>
 				</li>
 				<li>
-					<a href="#">Contacto</a>
+					<a href="<?php echo home_url(); ?>/contacto">Contacto</a>
 				</li>
 			</ul>
 		</nav>
