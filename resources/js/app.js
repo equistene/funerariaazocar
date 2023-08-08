@@ -1,6 +1,22 @@
 (function ($) {
   $(document).ready(function () {
-    console.log("hola");
+    let mostar = document.getElementById("mostrar");
+    let cerrar = document.getElementById("cerrar");
+    let dialogo = document.getElementById("dialogo");
+
+    mostrar.addEventListener("click", function () {
+      dialogo.showModal();
+    });
+
+    // Form cancel button closes the dialog box
+    cerrar.addEventListener("click", function () {
+      dialogo.close();
+    });
+
+    $("#accordion").accordion({
+      collapsible: true,
+      heightStyle: "content",
+    });
 
     $(".slider-services").slick({
       infinite: true,
