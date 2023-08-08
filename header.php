@@ -37,7 +37,7 @@
 			</div>
 
 			<div class="block sm:hidden">
-				<button>
+				<button id="menu">					
 					<svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-8 w-auto">
 							<path fill="#001d51" d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z"/>
 					</svg>
@@ -80,4 +80,32 @@
 				</nav>
 			</div>
 		</div>
+		<nav class="menu-mobile">
+			<ul>
+				<li>
+					<a href="#">Necesito un servicio</a>
+				</li>
+				<li>
+					<a href="#">Planificar en vida</a>
+				</li>
+				<li>
+					<a href="#">Qué hacer después</a>
+				</li>			
+				<li>
+					<a href="#">Repatriaciones</a>
+				</li>
+				<li>
+					<a href="#">Beneficios</a>
+				</li>
+				<li>
+					<a href="#">Convenios</a>
+				</li>
+				<li>
+					<a href="#">Conócenos</a>
+				</li>
+				<li>
+					<a href="#">Contacto</a>
+				</li>
+			</ul>
+		</nav>
 	</header>

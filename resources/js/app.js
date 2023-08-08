@@ -13,15 +13,20 @@
       dialogo.close();
     });
 
+    $("button#menu").click(function () {
+      $("nav.menu-mobile").slideToggle("fast", function () {});
+    });
+
     $("#accordion").accordion({
       collapsible: true,
       heightStyle: "content",
+      active: "none",
     });
 
     $(".slider-services").slick({
       infinite: true,
       slidesToShow: 5,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       dots: true,
       arrows: false,
       responsive: [

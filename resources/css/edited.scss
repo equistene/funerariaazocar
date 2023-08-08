@@ -14,8 +14,7 @@ nav.main-menu{
     li{
       position: relative;
       background: $light;      
-      border-radius: 2rem;
-      overflow: hidden;
+      border-radius: 2rem;      
       &>a{        
         display: block;  
         padding: .3rem 1.2rem;                    
@@ -52,17 +51,23 @@ nav.main-menu{
             cursor: pointer;
             display: block;
             color: $primary;
+            white-space: nowrap;
+            
             &:hover{
               background-color: white !important;
               text-decoration: underline;
               color: #000;
             }
-          }          
+          }  
+          &:last-child{
+            all:unset;
+          }        
         }
       }  
       &:last-child{
-        @apply bg-primary text-white;
+        @apply bg-primary text-white;        
         a{
+          border-radius: 2rem;    
           &:hover{            
             @apply bg-yellow text-primary;
           }
@@ -171,11 +176,11 @@ footer .sociales{
 
 
 dialog::backdrop {
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,.8);
 }
 
 #dialogo {
-  @apply rounded-md overflow-hidden p-0;
+  @apply rounded-lg overflow-hidden p-0;
   h3{
     font-family: 'Gotham Pro Bold';
     @apply bg-primary text-white text-center p-4 text-xl;
@@ -187,7 +192,7 @@ dialog::backdrop {
       @apply text-primary text-2xl font-semibold 
     }
     p{
-      @apply mb-3;
+      @apply mb-3 text-sm leading-tight;
     }
     a{
       @apply flex justify-center items-center gap-2 bg-green-500 text-center text-white font-semibold rounded-full p-2 px-6 mx-auto;
@@ -200,6 +205,42 @@ dialog::backdrop {
     }
   }
   button#cerrar {
-    @apply table w-full bg-gray-600 text-white text-center py-3;
+    @apply table w-full bg-gray-600 text-white text-center py-2;
+  }
+}
+
+
+.slider-services{
+  .slick-track
+  {
+      display: flex !important;
+  }
+
+  .slick-slide
+  {
+      height: inherit !important;
+  }
+  .card{
+    a{
+      @apply h-full;
+    }
+  }
+}
+
+nav.menu-mobile{
+  @apply absolute shadow-lg;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  ul{   
+    @apply bg-white px-4 p-2;
+    list-style: none; 
+    li{
+      @apply my-2;
+      a{
+        display: block;
+      }
+    }
   }
 }
