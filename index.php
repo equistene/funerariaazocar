@@ -10,7 +10,7 @@
 
 	<?php get_template_part('template-parts/contact-box'); ?>
 
-	<?php get_template_part('template-parts/content-center'); ?>
+	<?php get_template_part('template-parts/content-center', "", array("bg" => "" )); ?>
 
 	<?php get_template_part('template-parts/two-cols-list'); ?>
 	
