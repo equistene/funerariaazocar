@@ -5,7 +5,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eius atque voluptates culpa nihil.</p>
     </div>
     <div class="col">
-      <?php echo do_shortcode('[contact-form-7 id="40b3882" title="Formulario de contacto 1"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="61e985a" title="Contact form 1"]'); ?>
     </div>
   </div>
 </section>

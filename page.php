@@ -12,6 +12,8 @@
 
 	<?php get_template_part('template-parts/gallery'); ?>
 
+	<?php get_template_part('template-parts/content-center', "", array("bg" => "", "video" => "si" )); ?>
+
 	<?php get_template_part('template-parts/contact-form'); ?>
 
 	<?php get_template_part('template-parts/accordion'); ?>

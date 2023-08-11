@@ -326,3 +326,10 @@ section.contact-form{
     }
   }
 }
+
+.video-frame{
+  @apply py-6;
+  iframe{
+    @apply aspect-video h-auto w-full rounded-md
+  }
+}
