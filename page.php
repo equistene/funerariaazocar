@@ -18,7 +18,6 @@
 
 	<?php get_template_part('template-parts/accordion'); ?>
 
-
 	<?php get_template_part('template-parts/contact-box'); ?>
 
 	</main>

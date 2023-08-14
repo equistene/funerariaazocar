@@ -333,3 +333,26 @@ section.contact-form{
     @apply aspect-video h-auto w-full rounded-md
   }
 }
+
+.gallery-small{
+  position: relative;
+  display: block;
+  width: inherit;
+  .slick-list{
+    overflow: hidden !important;
+  }
+  .item{
+    width: inherit;
+    height: auto;
+    max-width: inherit;
+    img{
+      width: inherit;
+      max-width: inherit;
+      height: auto;
+      @apply rounded-md;
+    }
+  }
+  ul.slick-dots{
+    margin: .5rem 0 0 0;
+  }
+}

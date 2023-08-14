@@ -1,6 +1,16 @@
 <section class="service-list">
   <div class="container mx-auto py-10">
-    <h2 class="title">Nuestro servicio incluye</h2>      
+    <?php if (isset($args['title'])): ?>
+      <h2 class="title"><?php echo $args['title']; ?></h2>
+    <?php else: ?>
+      <h2 class="title">Nuestro servicio incluye</h2> 
+    <?php endif; ?>    
+
+    <?php if (isset($args['title'])): ?>
+      <p><?php echo $args['bajada']; ?></p>          
+    <?php endif; ?>    
+    
+
     
     <ul class="list-servicio">
       <?php for ($list=0; $list < 10; $list++): ?>

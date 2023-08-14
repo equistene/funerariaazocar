@@ -50,6 +50,14 @@
       variableWidth: true,
       lazyLoad: "ondemand",
     });
+
+    $(".js-gallery-small").slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+    });
   });
 
   $(window).load(function () {});
