@@ -86,7 +86,7 @@
 					<a href="<?php echo home_url(); ?>/servicios/">Necesito un servicio</a>
 				</li>
 				<li>
-					<a href="<?php echo home_url(); ?>/planificar">Planificar en vida</a>
+					<a href="<?php echo home_url(); ?>/planifica">Planificar en vida</a>
 				</li>
 				<li>
 					<a href="<?php echo home_url(); ?>/post-funeral">Qué hacer después</a>
