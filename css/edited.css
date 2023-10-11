@@ -242,6 +242,9 @@ dialog::backdrop {
   height: 2rem;
   width: auto;
 }
+#dialogo .box a:hover{
+  opacity: 0.7;
+}
 #dialogo button#cerrar{
   display: table;
   width: 100%;
@@ -252,6 +255,9 @@ dialog::backdrop {
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+#dialogo button#cerrar:hover {
+  opacity: 0.5;
 }
 .slider-services .slick-track {
   display: flex !important;
@@ -474,6 +480,10 @@ footer .footer-bottom p, footer .footer-bottom a{
 .custom-arrows .arrow{
   height: 1.5rem;
   width: 1.5rem;
+  cursor: pointer;
+}
+.custom-arrows .arrow:hover{
+  opacity: 0.5;
 }
 .custom-arrows .arrow-prev {
   width: 24px;
@@ -486,6 +496,12 @@ footer .footer-bottom p, footer .footer-bottom a{
 .custom-arrows .slider-dots ul.slick-dots{
   margin: 0px;
   padding: 0px;
+}
+.custom-arrows .slider-dots ul.slick-dots li{
+  cursor: pointer;
+}
+.custom-arrows .slider-dots ul.slick-dots li:hover{
+  opacity: 0.6;
 }
 .intro-section iframe {
   width: 100%;

@@ -200,12 +200,15 @@ dialog::backdrop {
         @apply h-8 w-auto
       }
       &:hover{
-
+        @apply opacity-70;
       }
     }
   }
   button#cerrar {
     @apply table w-full bg-gray-600 text-white text-center py-2;
+    &:hover{
+      opacity: 0.5;
+    }
   }
 }
 
@@ -395,7 +398,10 @@ footer{
 .custom-arrows{
   @apply flex justify-center place-items-center gap-4 mt-4;
   .arrow{
-    @apply h-6 w-6;
+    @apply h-6 w-6 cursor-pointer;    
+    &:hover{
+      @apply opacity-50;
+    }
   }
   .arrow-prev{
     width: 24px;
@@ -410,6 +416,12 @@ footer{
   .slider-dots{
     ul.slick-dots{
       @apply m-0 p-0;
+      li{
+        @apply cursor-pointer;
+        &:hover{
+          @apply opacity-60;
+        }
+      }
     }
   }
 }
