@@ -8,7 +8,10 @@ function tailpress_setup() {
 
 	register_nav_menus(
 		array(
-			'primary' => __( 'Primary Menu', 'tailpress' ),
+			'primary' => __( 'Menú Principal', 'tailpress' ),
+			'secondary' => __( 'Menú Secundario', 'tailpress' ),
+			'mobile' => __( 'Menú Mobile', 'tailpress' ),
+			'footer' => __( 'Menú Footer', 'tailpress' ),			
 		)
 	);
 

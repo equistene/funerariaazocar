@@ -23,11 +23,11 @@
 
 
 	<header class="bg-gray-50 border-b-1 border-blue-950 shadow-md sticky top-0 z-50">
-		<button id="mostrar" class="flex justify-center items-center gap-2 bg-primary text-white w-full p-2">
+		<button id="mostrar" class="flex justify-center items-center gap-2 bg-primary text-white hover:bg-secondary w-full p-4">
 			<svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-auto">
 					<path fill="#ffffff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"/>
 			</svg>
-			<p class="text-white text-sm font-semibold uppercase gotham-bold">¿Cómo podemos ayudarte? Llámanos</p>
+			<p class="text-sm text-white font-semibold uppercase gotham-bold"><?php the_field('titulo_contacto', 'option'); ?></p>
 		</button>
 		<div class="container mx-auto flex justify-between items-center">
 			<div class="logo py-2">
@@ -46,66 +46,15 @@
 			
 			<div class="row hidden md:block">
 				<nav class="secondary-menu">
-					<ul>
-						<li><a href="<?php echo home_url(); ?>/nosotros">Conócenos</a></li>
-						<li><a href="<?php echo home_url(); ?>/repatriaciones">Repatriaciones</a></li>
-						<li><a href="<?php echo home_url(); ?>/convenios">Convenios</a></li>
-						<li><a href="<?php echo home_url(); ?>/beneficios">Beneficios</a></li>						
-						<li><a href="<?php echo home_url(); ?>/encuentranos">Encuéntranos</a></li>						
-					</ul>
+					<?php wp_nav_menu( array( 'theme_location'=>'secondary' ) ); ?>
 				</nav>
 
 				<nav class="main-menu">
-					<ul>
-						<li>
-							<a href="<?php echo home_url(); ?>/servicios">Necesito un servicio</a>
-							<ul>
-								<li><a href="<?php echo home_url(); ?>/servicios/memorial">Memorial</a></li>
-								<li><a href="<?php echo home_url(); ?>/servicios/eternal">Eternal</a></li>
-								<li><a href="<?php echo home_url(); ?>/servicios/clasico">Clásico</a></li>
-								<li><a href="<?php echo home_url(); ?>/servicios/tradicional">Tradicional</a></li>
-								<li><a href="<?php echo home_url(); ?>/servicios/estandar">Estándar</a></li>
-							</ul>
-						</li>
-						<li><a href="<?php echo home_url(); ?>/planifica">Planificar en vida</a></li>
-						<li>
-							<a href="<?php echo home_url(); ?>/post-funeral">Qué hacer después</a>
-							<ul>
-								<li><a href="#">Trámites post-funeral</a></li>
-								<li><a href="#">Apoyo en el duelo</a></li>
-							</ul>
-						</li>
-						<li><a href="<?php echo home_url(); ?>/contacto">Contáctanos</a></li>
-					</ul>
+					<?php wp_nav_menu( array( 'theme_location'=>'primary' ) ); ?>
 				</nav>
 			</div>
 		</div>
 		<nav class="menu-mobile">
-			<ul>
-				<li>
-					<a href="<?php echo home_url(); ?>/servicios/">Necesito un servicio</a>
-				</li>
-				<li>
-					<a href="<?php echo home_url(); ?>/planifica">Planificar en vida</a>
-				</li>
-				<li>
-					<a href="<?php echo home_url(); ?>/post-funeral">Qué hacer después</a>
-				</li>			
-				<li>
-					<a href="<?php echo home_url(); ?>/repatriaciones">Repatriaciones</a>
-				</li>
-				<li>
-					<a href="<?php echo home_url(); ?>/beneficios">Beneficios</a>
-				</li>
-				<li>
-					<a href="<?php echo home_url(); ?>/convenios">Convenios</a>
-				</li>
-				<li>
-					<a href="<?php echo home_url(); ?>/nosotros">Conócenos</a>
-				</li>
-				<li>
-					<a href="<?php echo home_url(); ?>/contacto">Contacto</a>
-				</li>
-			</ul>
+			<?php wp_nav_menu( array( 'theme_location'=>'mobile' ) ); ?>
 		</nav>
 	</header>

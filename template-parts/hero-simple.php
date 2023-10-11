@@ -13,7 +13,7 @@
 
   <?php if (isset($args['background'])): ?>
     <div class="bg">
-      <img src="http://unsplash.it/1920/400?gravity=center" alt="">
+      <img src="<?php echo $args['background']; ?>" alt="">
     </div>
   <?php endif; ?>
 </section>

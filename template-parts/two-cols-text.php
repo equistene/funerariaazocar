@@ -3,16 +3,12 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
       <div>
         <?php if (isset($args['title'])): ?>
-          <h2 class="title"><?php echo $args['title']; ?></h2>
-        <?php else: ?>
-          <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+          <h2 class="title"><?php echo $args['title']; ?></h2>        
         <?php endif; ?>        
       </div>
       <div>
-      <?php if (isset($args['bajada'])): ?>
-          <p><?php echo $args['bajada']; ?></p>
-        <?php else: ?>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, amet, fugit incidunt cumque ex dolore optio placeat sint unde minus autem, enim consequuntur. Odit, velit? Laborum sit unde quaerat voluptatibus quod vel in placeat porro, obcaecati optio ea quisquam iure.</p>
+        <?php if (isset($args['bajada'])): ?> 
+          <p><?php echo $args['bajada']; ?></p>        
         <?php endif; ?>                
       </div>
     </div>

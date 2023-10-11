@@ -49,6 +49,15 @@ article > *:not(.entry-content),
     @apply m-0 p-0 mb-2 text-3xl font-bold text-primary gotham-bold leading-8
 }
 
+/* .title::after{
+    @apply bg-yellow my-2;
+    content: "";
+    width: 40px;
+    height: 3px;
+    display: table;    
+    text-align: inherit;
+} */
+
 .icon img, .icon svg{
     @apply max-h-10 w-auto
 }
@@ -68,7 +77,7 @@ img.rounded{
 }
 
 ul.slick-dots{
-    @apply flex justify-center items-center gap-2 mt-10
+    @apply flex justify-center items-center gap-2 mt-4
 }
 
 ul.slick-dots li{
@@ -105,4 +114,8 @@ p, ul, li{
 
 nav.main-menu{
     
+}
+
+.video-frame:empty{
+    display: none !important;
 }

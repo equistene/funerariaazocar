@@ -101,7 +101,7 @@ nav.secondary-menu{
   }
 }
 
-nav.nav-footer{
+nav.nav-footer{  
   ul{
     @apply flex flex-col md:flex-row justify-start items-center md:items-end gap-4 flex-wrap;
     li{
@@ -249,7 +249,7 @@ ul.list-servicio{
   @apply pt-5 columns-1 lg:columns-3 gap-10;
   li{
     @apply flex-1 flex justify-start items-center gap-2 py-4 px-1;
-    border-bottom: 1px solid $secondary;
+    border-bottom: 1px solid $yellow;
     .ico{
       border: 1px solid $secondary;
       border-radius: 50%;
@@ -354,5 +354,69 @@ section.contact-form{
   }
   ul.slick-dots{
     margin: .5rem 0 0 0;
+  }
+}
+
+footer{
+  border-top: 4px solid $yellow;
+}
+
+.shadow-yellow{
+  position: relative;
+  img{
+    position: relative;
+    z-index: 1;
+  }
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 8px;
+    left: 8px;
+    background: $yellow;
+    z-index: 0;
+    @apply rounded-lg;
+  }
+}
+
+footer{
+  @apply bg-primary text-white;
+  .footer-bottom{
+    @apply text-white;
+    p, a{
+      @apply text-white;
+    }
+  }
+}
+
+
+.custom-arrows{
+  @apply flex justify-center place-items-center gap-4 mt-4;
+  .arrow{
+    @apply h-6 w-6;
+  }
+  .arrow-prev{
+    width: 24px;
+    height: 24px;    
+    &:hover{
+      @apply opacity-60 cursor-pointer;
+    }
+  }  
+  .arrow-next{
+    
+  }
+  .slider-dots{
+    ul.slick-dots{
+      @apply m-0 p-0;
+    }
+  }
+}
+
+.intro-section{
+  iframe{
+    width: 100%;
+    max-height: 400px;
   }
 }

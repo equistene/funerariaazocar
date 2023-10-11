@@ -28,7 +28,11 @@
       slidesToShow: 5,
       slidesToScroll: 2,
       dots: true,
-      arrows: false,
+      arrows: true,
+      appendArrows: $(".slick-slider-nav"),
+      appendDots: $(".slider-dots"),
+      prevArrow: $(".arrow-prev"),
+      nextArrow: $(".arrow-next"),
       responsive: [
         {
           breakpoint: 480,
@@ -44,11 +48,15 @@
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: true,
-      arrows: false,
       centerMode: true,
       variableWidth: true,
       lazyLoad: "ondemand",
+      dots: true,
+      arrows: true,
+      appendArrows: $(".slick-slider-nav"),
+      appendDots: $(".slider-dots"),
+      prevArrow: $(".arrow-prev"),
+      nextArrow: $(".arrow-next"),
     });
 
     $(".js-gallery-small").slick({
