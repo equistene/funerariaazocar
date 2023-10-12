@@ -17,11 +17,7 @@
           $servicio = get_sub_field('servicio');          
           ?>
           <li>
-            <div class="ico">
-              <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#000000" d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z"/>
-              </svg>
-            </div>
+            <div class="ico"><?php echo $icono; ?></div>
             <p><?php echo $servicio; ?></p>        
           </li>      
         <?php endwhile; ?>          

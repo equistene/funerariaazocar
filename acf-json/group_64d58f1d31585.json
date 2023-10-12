@@ -520,11 +520,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "table",
+                            "layout": "block",
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
-                            "button_label": "Add Row",
+                            "button_label": "Agregar",
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
@@ -553,7 +553,7 @@
                                     "label": "Contenido",
                                     "name": "contenido",
                                     "aria-label": "",
-                                    "type": "textarea",
+                                    "type": "wysiwyg",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -563,10 +563,10 @@
                                         "id": ""
                                     },
                                     "default_value": "",
-                                    "maxlength": "",
-                                    "rows": "",
-                                    "placeholder": "",
-                                    "new_lines": "",
+                                    "tabs": "visual",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 1,
                                     "parent_repeater": "field_64fa96a15b5ed"
                                 }
                             ]
@@ -746,8 +746,8 @@
                                     "label": "Icono",
                                     "name": "icono",
                                     "aria-label": "",
-                                    "type": "image",
-                                    "instructions": "",
+                                    "type": "font-awesome",
+                                    "instructions": "Para ver una lista completa de iconos disponibles ir al <a href=\"https:\/\/fontawesome.com\/search?o=a&m=free&new=yes\" target=\"_blank\">siguiente enlace<\/a>.",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -755,16 +755,20 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "url",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": "",
-                                    "preview_size": "medium",
+                                    "icon_sets": [
+                                        "solid",
+                                        "regular",
+                                        "brands"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "&lt;i class=\"fa-regular fa-circle-check fa-fw\"&gt;&lt;\/i&gt; Circle Check",
+                                    "default_value": "{ \"style\" : \"regular\", \"id\" : \"circle-check\", \"label\" : \"Circle Check\", \"unicode\" : \"f058\" }",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 1,
+                                    "fa_live_preview": "",
+                                    "choices": [],
                                     "parent_repeater": "field_64fa97c99650c"
                                 },
                                 {
@@ -1207,5 +1211,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1694487871
+    "modified": 1697077037
 }

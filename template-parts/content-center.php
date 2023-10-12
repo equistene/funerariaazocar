@@ -1,4 +1,4 @@
-<section class="py-10 md:py-20">
+<section class="py-10 md:py-10">
   <div class="container mx-auto">
     <div class="intro-section text-left md:text-center max-w-[90ch] mx-auto">
       <h2 class="title"><?php echo $args['title']; ?></h2>

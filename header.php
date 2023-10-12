@@ -21,7 +21,6 @@
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-
 	<header class="bg-gray-50 border-b-1 border-blue-950 shadow-md sticky top-0 z-50">
 		<button id="mostrar" class="flex justify-center items-center gap-2 bg-primary text-white hover:bg-secondary w-full p-4">
 			<svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-auto">

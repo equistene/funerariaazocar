@@ -11,7 +11,7 @@
 	<div class="bg-gray-100">
 		<div class="container mx-auto flex flex-col justify-between items-center gap-4 py-6">
 			<div class="logo">
-				<img src="<?php bloginfo('template_url'); ?>/images/logo-horizontal.png" alt="Funeraria Azócar" class="w-auto max-h-12 md:max-h-20">
+				<img src="<?php the_field('logo', 'option'); ?>" alt="Funeraria Azócar" class="w-auto max-h-12 md:max-h-20">
 			</div>
 			<div class="data flex-1 flex justify-between gap-4 items-start">
 				<p class="font-semibold gotham-bold text-primary text-center"><?php the_field('direccion', 'option'); ?></p>

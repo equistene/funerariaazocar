@@ -157,9 +157,13 @@ footer .sociales{
   .content-accordion{
     @apply p-4;
     h2, h3, h4{
-
+      @apply my-4;
     }
     p{
+      @apply mb-4;
+      &:empty{
+        @apply hidden;
+      }
       a{
         &:hover{
 
@@ -196,11 +200,12 @@ dialog::backdrop {
     }
     a{
       @apply flex justify-center items-center gap-2 bg-green-500 text-center text-white font-semibold rounded-full p-2 px-6 mx-auto;
-      svg{
-        @apply h-8 w-auto
+      img, svg{
+        @apply h-6 w-auto;
+        filter: invert(100%) sepia(72%) saturate(2%) hue-rotate(32deg) brightness(108%) contrast(101%);   
       }
       &:hover{
-        @apply opacity-70;
+        @apply bg-green-900;
       }
     }
   }
@@ -252,11 +257,17 @@ ul.list-servicio{
   @apply pt-5 columns-1 lg:columns-3 gap-10;
   li{
     @apply flex-1 flex justify-start items-center gap-2 py-4 px-1;
-    border-bottom: 1px solid $yellow;
+    border-bottom: 1px solid $yellow;    
     .ico{
       border: 1px solid $secondary;
       border-radius: 50%;
-      @apply p-1 grid;
+      @apply p-1 aspect-square w-9 place-content-center;
+      &:not(:empty){
+        @apply grid;
+      }
+      &:empty{
+        @apply hidden;
+      }
       svg{
         @apply w-3 h-auto;
         path{
@@ -334,6 +345,9 @@ section.contact-form{
   @apply py-6;
   iframe{
     @apply aspect-video h-auto w-full rounded-md
+  }
+  &:empty{
+    display: none;
   }
 }
 
