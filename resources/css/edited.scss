@@ -486,7 +486,7 @@ ul.list-features{
 ul#menu-menu-principal{
   li.menu-item-has-children{
     >a{
-      @apply flex justify-start items-center gap-2;
+      @apply flex justify-start items-center gap-1;
       &:after{
         content: "▾";
         @apply text-sm ;
