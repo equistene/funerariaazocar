@@ -489,7 +489,7 @@ ul#menu-menu-principal{
       @apply flex justify-start items-center gap-2;
       &:after{
         content: "▾";
-        @apply text-xs;
+        @apply text-sm ;
       }
     }
   }
