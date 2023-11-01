@@ -108,6 +108,14 @@ if( have_rows('bloques') ):
 						$content = get_sub_field('contenido');
 						$logos = get_sub_field('logos');						
 						get_template_part('template-parts/content-logos', "", array("title" => $title, "content" => $content, "logos" => $logos ));
+				
+				elseif( get_row_layout() == 'servicio_descripcion'):
+						$name = get_sub_field('nombre');
+						$descripion = get_sub_field('descripcion');
+						$image = get_sub_field('imagen');		
+						$price = get_sub_field('precio');
+						$features = get_sub_field('caracteristicas');
+						get_template_part('template-parts/servicio-descripcion', "", array("name" => $name, "description" => $descripion, "image" => $image, "price" => $price, "features" => $features ));
 
         endif;
 

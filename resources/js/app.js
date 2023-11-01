@@ -2,7 +2,7 @@
   $(document).ready(function () {
     let mostar = document.getElementById("mostrar");
     let cerrar = document.getElementById("cerrar");
-    let dialogo = document.getElementById("dialogo");
+    let dialogo = document.getElementById("dialogo");    
 
     mostrar.addEventListener("click", function () {
       dialogo.showModal();
@@ -12,6 +12,17 @@
     cerrar.addEventListener("click", function () {
       dialogo.close();
     });
+
+    const divToMakeSticky = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 3) {
+            divToMakeSticky.classList.add("stickied");
+        } else {
+            divToMakeSticky.classList.remove("stickied");
+        }
+    });
+
 
     $("button#menu").click(function () {
       $("nav.menu-mobile").slideToggle("fast", function () {});

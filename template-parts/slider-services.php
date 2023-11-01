@@ -13,11 +13,11 @@
               ?>
               <div class="card border hover:border-blue-950 rounded-md overflow-hidden max-w-md border-slate-200">                
                 <a href="<?php echo $link ?>" class="card-service">
-                  <div class="icon">
+                  <!-- <div class="icon">
                     <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="aspect-auto h-10 w-auto">
                         <path fill="#000000" d="M10.5 2h3v6H19v3h-5.5v11h-3V11H5V8h5.5V2Z"/>
                     </svg>
-                  </div>
+                  </div> -->
                   <p class="text-center leading-5"><?php echo $title ?></p>								
                 </a>
               </div>
