@@ -454,6 +454,8 @@ header.stickied{
   }
 }
 
+
+
 ul.list-features{
   li{
     @apply flex-1 flex justify-start items-center gap-2 py-2 px-1;
@@ -477,6 +479,17 @@ ul.list-features{
     }
     p{
 
+    }
+  }
+}
+
+ul.menu-menu-principal{
+  li.menu-item-has-children{
+    a{
+      @apply flex justify-start gap-2;
+      &:after{
+        content: "▼";
+      }
     }
   }
 }
