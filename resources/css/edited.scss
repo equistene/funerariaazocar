@@ -485,10 +485,11 @@ ul.list-features{
 
 ul#menu-menu-principal{
   li.menu-item-has-children{
-    a{
+    >a{
       @apply flex justify-start gap-2;
       &:after{
         content: "▼";
+        @apply text-xs;
       }
     }
   }
