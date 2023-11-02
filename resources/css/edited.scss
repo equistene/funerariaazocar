@@ -90,15 +90,12 @@ nav.secondary-menu{
         display: block;
         padding: .3rem 1rem;
         font-size: 0.85rem;        
-        text-transform: uppercase;
-        background-color: #e9eeff;
-        border-width: 1px;
-        border-radius: 2rem;
+        text-transform: uppercase;                      
         @apply text-primary border-primary;
 
         &:hover{
-          color: $primary;
-          @apply bg-primary text-white;          
+          @apply text-primary underline;
+      
         }
       }
     }
