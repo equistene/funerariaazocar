@@ -88,13 +88,17 @@ nav.secondary-menu{
     li{
       a{
         display: block;
-        padding: .4rem;
-        font-size: 0.8rem;
-        color: #444;
+        padding: .3rem 1rem;
+        font-size: 0.85rem;        
         text-transform: uppercase;
+        background-color: #e9eeff;
+        border-width: 1px;
+        border-radius: 2rem;
+        @apply text-primary border-primary;
+
         &:hover{
           color: $primary;
-          text-decoration: underline;
+          @apply bg-primary text-white;          
         }
       }
     }
@@ -435,6 +439,9 @@ footer{
         &:hover{
           @apply opacity-60;
         }
+        &:only-child{
+          display: none;
+        }
       }
     }
   }
@@ -449,6 +456,11 @@ footer{
 
 
 header.stickied{
+  button{
+    p{
+      @apply text-base;
+    }
+  }
   img.logo{
     @apply max-h-8 md:max-h-16;
   }
