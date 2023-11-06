@@ -1,6 +1,6 @@
 <section class="py-10">
   <div class="container mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 relative">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 relative">
         <div class="col col-span-1 md:col-span-1">
             <div class="md:sticky md:top-40">
                 <h2 class="text-blue text-2xl font-bold"><?php echo $args['name']; ?></h2>
@@ -10,7 +10,7 @@
                 <img class="rounded-lg mt-4 w-full h-auto" src="<?php echo $args['image']; ?>" alt="<?php echo $args['name']; ?>">
             </div>            
         </div>      
-        <div class="col col-span-1 md:col-span-2 md:pt-8">
+        <div class="col col-span-1 md:col-span-1 md:pt-8">
             <p class="font-bold">Este servicio incluye: </p>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 my-2 list-features">
                 <?php if( have_rows('caracteristicas') ): ?>
