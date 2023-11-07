@@ -258,7 +258,7 @@
                             "label": "Bajada",
                             "name": "bajada",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -268,10 +268,10 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 1
                         },
                         {
                             "key": "field_64fa926258942",
@@ -316,6 +316,27 @@
                                     "parent_repeater": "field_64fa926258942"
                                 },
                                 {
+                                    "key": "field_654aaf71636da",
+                                    "label": "Descripción",
+                                    "name": "descripcion",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "visual",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 1,
+                                    "parent_repeater": "field_64fa926258942"
+                                },
+                                {
                                     "key": "field_64fa927c58944",
                                     "label": "Enlace",
                                     "name": "enlace",
@@ -334,32 +355,6 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_64fa926258942"
-                                },
-                                {
-                                    "key": "field_64fa928358945",
-                                    "label": "Icono",
-                                    "name": "icono",
-                                    "aria-label": "",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "url",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": "",
-                                    "preview_size": "medium",
                                     "parent_repeater": "field_64fa926258942"
                                 }
                             ]
@@ -1350,5 +1345,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698807849
+    "modified": 1699393437
 }
