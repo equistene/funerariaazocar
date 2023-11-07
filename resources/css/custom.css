@@ -97,7 +97,7 @@ ul.slick-dots li.slick-active{
 }
 
 .card-service{
-    @apply flex flex-col py-8 px-4 justify-center items-center gap-1 bg-white hover:bg-slate-200 transition-all shadow-xl text-center
+    @apply flex flex-col p-4 justify-center items-center bg-white hover:bg-slate-200 transition-all shadow-xl text-center hover:scale-105
 }
 
 
