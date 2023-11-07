@@ -1,4 +1,4 @@
-<section class="my-10 py-10 md:py-10 bg-slate-50 overflow-x-hidden">
+<section class="py-10 md:py-10 bg-slate-50 overflow-x-hidden">
   <div class="container mx-auto">
     <div class="intro-section text-center mb-2">
       <h2 class="title"><?php echo $args['title']; ?></h2>

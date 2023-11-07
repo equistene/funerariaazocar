@@ -101,7 +101,9 @@ ul.slick-dots li.slick-active{
 }
 
 .box-content{
-    @apply border-gray-200 rounded-md border p-6 text-center shadow-lg hover:shadow-xl transition-all
+    @apply border-gray-200 rounded-md border p-6 text-center shadow-lg hover:shadow-xl transition-all w-full;
+    box-sizing: border-box;
+
 }
 
 .box-content .icon{
