@@ -7,17 +7,14 @@
     <?php if (isset($args['content'])): ?>
       <p><?php echo $args['content']; ?></p>          
     <?php endif; ?>    
-    
-
+  
     
     <ul class="list-servicio">      
       <?php if( have_rows('lista') ): ?>
         <?php while( have_rows('lista') ): the_row(); 
-          $icono = get_sub_field('icono');
           $servicio = get_sub_field('servicio');          
           ?>
-          <li>
-            <div class="ico"><?php echo $icono; ?></div>
+          <li>            
             <p><?php echo $servicio; ?></p>        
           </li>      
         <?php endwhile; ?>          
