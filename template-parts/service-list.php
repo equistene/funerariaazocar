@@ -7,7 +7,6 @@
     <?php if (isset($args['content'])): ?>
       <p><?php echo $args['content']; ?></p>          
     <?php endif; ?>    
-  
     
     <ul class="list-servicio">      
       <?php if( have_rows('lista') ): ?>

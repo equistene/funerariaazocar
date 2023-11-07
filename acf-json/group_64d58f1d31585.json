@@ -737,36 +737,6 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_64fa97dc9650e",
-                                    "label": "Icono",
-                                    "name": "icono",
-                                    "aria-label": "",
-                                    "type": "font-awesome",
-                                    "instructions": "Para ver una lista completa de iconos disponibles ir al <a href=\"https:\/\/fontawesome.com\/search?o=a&m=free&new=yes\" target=\"_blank\">siguiente enlace<\/a>.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "icon_sets": [
-                                        "solid",
-                                        "regular",
-                                        "brands"
-                                    ],
-                                    "custom_icon_set": "",
-                                    "default_label": "&lt;i class=\"fa-regular fa-circle-check fa-fw\"&gt;&lt;\/i&gt; Circle Check",
-                                    "default_value": "{ \"style\" : \"regular\", \"id\" : \"circle-check\", \"label\" : \"Circle Check\", \"unicode\" : \"f058\" }",
-                                    "save_format": "element",
-                                    "allow_null": 0,
-                                    "show_preview": 1,
-                                    "enqueue_fa": 1,
-                                    "fa_live_preview": "",
-                                    "choices": [],
-                                    "parent_repeater": "field_64fa97c99650c"
-                                },
-                                {
                                     "key": "field_64fa97d49650d",
                                     "label": "Servicio",
                                     "name": "servicio",
@@ -1345,5 +1315,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699393437
+    "modified": 1699395802
 }
