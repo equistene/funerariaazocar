@@ -10,15 +10,12 @@
           <?php while( have_rows('servicios') ): the_row(); 
               $title = get_sub_field('titulo');
               $link = get_sub_field('enlace');
+              $description = get_sub_field('descripcion');
               ?>
               <div class="card border hover:border-blue-950 rounded-md overflow-hidden max-w-md border-slate-200">                
-                <a href="<?php echo $link ?>" class="card-service">
-                  <!-- <div class="icon">
-                    <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="aspect-auto h-10 w-auto">
-                        <path fill="#000000" d="M10.5 2h3v6H19v3h-5.5v11h-3V11H5V8h5.5V2Z"/>
-                    </svg>
-                  </div> -->
-                  <p class="text-center leading-5"><?php echo $title ?></p>								
+                <a href="<?php echo $link ?>" class="card-service">                  
+                  <h2 class="text-primary text-xl uppercase font-bold text-center leading-1"><?php echo $title; ?></h2>
+                  <?php echo $description; ?>
                 </a>
               </div>
           <?php endwhile; ?>          
