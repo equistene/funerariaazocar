@@ -514,3 +514,11 @@ a.card-service{
     @apply p-2 text-base;
   }
 }
+
+.intro-section{
+  p{
+    max-width: 90ch;
+    margin: 0 auto;
+    text-wrap: balance;
+  }
+}
