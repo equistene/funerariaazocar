@@ -48,13 +48,7 @@ if( have_rows('bloques') ):
 						$bajada = get_sub_field('bajada');
 						$servicios = get_sub_field('servicios');
 						get_template_part('template-parts/slider-services', '', array('title' => $title, 'bajada' => $bajada, 'servicios' => $servicios));
-
-				elseif( get_row_layout() == 'botonera_servicios'):
-						$title = get_sub_field('titulo');
-						$content = get_sub_field('contenido');
-						$video = get_sub_field('video');
-						$image = get_sub_field('imagen');
-						get_template_part('template-parts/content-center', "", array("title" => $title, "content" => $content, "video" => $video, "imagen" => $imagen ));
+				
 
 				elseif( get_row_layout() == 'contenido_centrado'):
 						$title = get_sub_field('titulo');
