@@ -506,7 +506,7 @@ ul#menu-menu-principal{
 
 
 a.card-service{
-  @apply flex flex-col p-0 justify-center items-center bg-white hover:bg-slate-200 transition-all shadow-xl text-center;
+  @apply flex flex-col p-0 justify-start items-center bg-white hover:bg-slate-200 transition-all shadow-xl text-center;
   h2{
     @apply bg-primary text-white p-1 block w-full text-lg font-bold;
   }
