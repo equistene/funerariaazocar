@@ -15,7 +15,7 @@
               <div class="card border hover:border-blue-950 rounded-md overflow-hidden max-w-md border-slate-200">                
                 <a href="<?php echo $link ?>" class="card-service">                  
                   <h2><?php echo $title; ?></h2>
-                  <?php echo $description; ?>                  
+                  <?php // echo $description; ?>                  
                 </a>
               </div>
           <?php endwhile; ?>          

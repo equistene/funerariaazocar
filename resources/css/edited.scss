@@ -385,18 +385,18 @@ footer{
     position: relative;
     z-index: 1;
   }
-  &:before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 8px;
-    left: 8px;
-    background: $yellow;
-    z-index: 0;
-    @apply rounded-lg;
-  }
+  // &:before{
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 8px;
+  //   left: 8px;
+  //   background: $yellow;
+  //   z-index: 0;
+  //   @apply rounded-lg;
+  // }
 }
 
 footer{
@@ -507,12 +507,15 @@ ul#menu-menu-principal{
 
 a.card-service{
   @apply flex flex-col p-0 justify-start items-center hover:bg-slate-200 transition-all shadow-xl text-center;
+  // h2{
+  //   @apply bg-primary text-white p-1 block w-full text-lg font-bold;
+  // }
+  // p{
+  //   @apply py-4 px-2 text-base leading-5;
+  // }  
   h2{
-    @apply bg-primary text-white p-1 block w-full text-lg font-bold;
+    @apply py-4 px-2 text-base leading-5 font-bold;
   }
-  p{
-    @apply py-4 px-2 text-base leading-5;
-  }  
 }
 
 .slider-services{  
