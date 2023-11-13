@@ -31,7 +31,7 @@
 		<div class="bg-primary text-white">
 			<div class="header-bar flex justify-center items-center text-white">
 				<p class="hidden md:block">Abierto de lunes a domingo las 24 hrs del día</p>
-				<p>Emergencias: <a href="tel:+569 9818 8978">+56998188978</a></p>
+				<p>Asistencia Emergencias: <a href="tel:+56998188978">+56998188978</a></p>
 				<p class="hidden md:block">Llámanos al <a href="tel:223646000">+56223646000</a></p>				
 			</div>
 		</div>
