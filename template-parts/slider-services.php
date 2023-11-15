@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div class="intro-section">
+    <div class="intro-section text-center mt-8">
       <?php echo $args['adicional']; ?>
     </div>
   </div>
