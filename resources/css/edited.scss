@@ -603,4 +603,7 @@ a.card-service{
       }
     }
   }
+  ul.slick-dots li:only-child{
+    display: none;
+  }
 }
