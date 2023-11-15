@@ -14,7 +14,7 @@
                     <?php while( have_rows('modelos') ): the_row(); ?>
                         <div>
                             <img class="rounded-lg mt-4 w-full h-auto" src="<?php the_sub_field('imagen'); ?>" alt="Imagen">
-                            <p><?php the_sub_field('nombre'); ?></p>
+                            <p class="bg-slate-200 px-4 py-2 rounded-full -translate-y-4 ml-2 table w-max"><?php the_sub_field('nombre'); ?></p>
                         </div>                        
                     <?php endwhile; ?>          
                 <?php endif; ?>    
@@ -23,7 +23,7 @@
         </div>      
         <div class="col col-span-1 md:col-span-1 md:pt-8">
             <p class="font-bold">Este servicio incluye: </p>
-            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 my-2 list-features">
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 my-2 list-features">
                 <?php if( have_rows('caracteristicas') ): ?>
                     <?php while( have_rows('caracteristicas') ): the_row(); ?>
                         <li><?php the_sub_field('caracteristica'); ?></li>

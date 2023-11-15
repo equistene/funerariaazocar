@@ -466,7 +466,7 @@ header.stickied{
 
 ul.list-features{
   li{
-    @apply flex-1 flex justify-start items-center gap-2 py-2 px-1;
+    @apply flex-1 flex justify-start items-center gap-2 py-1 px-1;
     border-bottom: 1px solid $yellow;    
     .ico{
       border: 1px solid $secondary;
@@ -575,7 +575,32 @@ a.card-service{
 
 
 .js-gallery-model{
+  @apply relative;
   .slick-list{
     overflow: hidden !important;
+  }
+  button.slick-arrow{
+    @apply absolute top-1/2 translate-y-1/2 w-8 h-8 bg-primary text-white rounded-full z-10;
+    &:hover{
+      @apply bg-yellow text-primary;
+    }
+    &.slick-prev{
+      left: 0;
+      font-size: 0;
+      &::before{
+        content: "<";
+        font-size: 1rem;
+        font-weight: 800;
+      }
+    }
+    &.slick-next{
+      right: 0;
+      font-size: 0;
+      &::before{
+        content: ">";
+        font-size: 1rem;
+        font-weight: 800;
+      }
+    }
   }
 }
