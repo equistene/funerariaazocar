@@ -31,5 +31,9 @@
         <img src="<?php bloginfo('template_url'); ?>/images/caret-right.svg">
       </div>
     </div>
+
+    <div class="intro-section">
+      <?php echo $args['adicional']; ?>
+    </div>
   </div>
 </section>

@@ -358,6 +358,26 @@
                                     "parent_repeater": "field_64fa926258942"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_655429dc4daf0",
+                            "label": "Texto adicional",
+                            "name": "texto_adicional",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -1315,5 +1335,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699915133
+    "modified": 1700014583
 }
