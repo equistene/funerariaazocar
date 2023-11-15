@@ -77,6 +77,14 @@
       dots: true,
       arrows: false,
     });
+
+    $(".js-gallery-model").slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+    });
   });
 
   $(window).load(function () {});

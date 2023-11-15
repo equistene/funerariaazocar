@@ -7,7 +7,18 @@
                 <h3 class="text-lg"><?php echo $args['description']; ?></h3>
                 <h4 class="font-bold"><?php echo $args['price']; ?></h4>
 
-                <img class="rounded-lg mt-4 w-full h-auto" src="<?php echo $args['image']; ?>" alt="<?php echo $args['name']; ?>">
+                <!-- <img class="rounded-lg mt-4 w-full h-auto" src="<?php echo $args['image']; ?>" alt="<?php echo $args['name']; ?>"> -->
+
+                <div class="js-gallery-model">
+                <?php if( have_rows('modelos') ): ?>
+                    <?php while( have_rows('modelos') ): the_row(); ?>
+                        <div>
+                            <img class="rounded-lg mt-4 w-full h-auto" src="<?php the_sub_field('imagen'); ?>" alt="Imagen">
+                            <p><?php the_sub_field('nombre'); ?></p>
+                        </div>                        
+                    <?php endwhile; ?>          
+                <?php endif; ?>    
+                </div>
             </div>            
         </div>      
         <div class="col col-span-1 md:col-span-1 md:pt-8">
