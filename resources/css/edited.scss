@@ -572,3 +572,10 @@ a.card-service{
     margin: 0 0 1rem 0;
   }
 }
+
+
+.js-gallery-model{
+  .slick-list{
+    overflow: hidden !important;
+  }
+}
