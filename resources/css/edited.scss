@@ -580,7 +580,9 @@ a.card-service{
     overflow: hidden !important;
   }
   button.slick-arrow{
-    @apply absolute top-1/2 translate-y-1/2 w-8 h-8 bg-primary text-white rounded-full z-10;
+    @apply absolute w-8 h-8 bg-primary text-white rounded-full z-10;
+    top: 50%;
+    transform: translate(0, -50%);
     &:hover{
       @apply bg-yellow text-primary;
     }
