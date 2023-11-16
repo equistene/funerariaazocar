@@ -515,6 +515,9 @@ a.card-service{
   h2{
     @apply py-4 px-2 text-base leading-5 font-bold;
   }
+  &:hover{
+    @apply bg-yellow text-primary;
+  }
 }
 
 .slider-services{  
