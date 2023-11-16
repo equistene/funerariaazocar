@@ -14,7 +14,7 @@
                     <?php while( have_rows('modelos') ): the_row(); ?>
                         <div>
                             <img class="rounded-lg mt-4 w-full h-auto" src="<?php the_sub_field('imagen'); ?>" alt="Imagen">
-                            <p class="bg-slate-200 px-4 py-2 rounded-full -translate-y-4 ml-2 table w-max"><?php the_sub_field('nombre'); ?></p>
+                            <p class="bg-blue text-white px-4 py-2 rounded-full -translate-y-4 ml-2 table w-max"><?php the_sub_field('nombre'); ?></p>
                         </div>                        
                     <?php endwhile; ?>          
                 <?php endif; ?>    
