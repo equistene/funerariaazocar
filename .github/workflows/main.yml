@@ -14,9 +14,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: dryden.dreamhost.com
+          server: ftp.wtt.mlf.mybluehost.me
           port: 21
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /funerariaazocar.dreamhosters.com/wp-content/themes/funeraria-theme/
+          server-dir: /public_html/funerariaazocar/wp-content/themes/funeraria-theme/
           timeout: 90000
