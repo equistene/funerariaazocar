@@ -39,7 +39,7 @@
 	<?php do_action( 'tailpress_header' ); ?>
 
 	<header class="bg-gray-50 border-b-1 border-blue-950 shadow-md sticky top-0 z-50" id="header">
-		<button id="mostrar" class="hidden flex justify-center items-center gap-2 bg-primary text-white hover:bg-secondary w-full p-4">
+		<button id="mostrar" class="hidden justify-center items-center gap-2 bg-primary text-white hover:bg-secondary w-full p-4">
 			<svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 w-auto">
 					<path fill="#ffffff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"/>
 			</svg>
@@ -48,8 +48,8 @@
 		<div class="bg-primary text-white">
 			<div class="header-bar flex justify-center items-center text-white">
 				<p class="hidden md:block">Abierto de lunes a domingo las 24 hrs del día</p>
-				<p>Asistencia Emergencias: <a href="tel:56964536718">+56964536718</a></p>
-				<p class="hidden md:block">Llámanos al <a href="tel:56223646000">+56223646000</a></p>				
+				<p>Asistencia Emergencias: <a href="tel:+56964536718">+56964536718</a></p>
+				<p class="hidden md:block">Llámanos al <a href="tel:+56223646000">+56223646000</a></p>				
 			</div>
 		</div>
 		<div class="container mx-auto flex justify-between items-center py-2">
