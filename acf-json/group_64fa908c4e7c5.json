@@ -501,6 +501,66 @@
                     "parent_repeater": "field_64fa9c04bf293"
                 }
             ]
+        },
+        {
+            "key": "field_656d109146e8c",
+            "label": "Contacto 01",
+            "name": "contacto_01",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Solo se muestra en escritorio",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_656d10ac46e8d",
+            "label": "Contacto 02",
+            "name": "contacto_02",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Se muestra en mobile y escritorio",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_656d10d146e8e",
+            "label": "Contacto 03",
+            "name": "contacto_03",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Solo se muestra en escritorio",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -521,5 +581,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1697073642
+    "modified": 1701646563
 }

@@ -2,11 +2,6 @@
 <?php do_action( 'tailpress_content_end' ); ?>
 <?php do_action( 'tailpress_content_after' ); ?>
 
-<dialog id="dialogo">
-	<?php get_template_part('template-parts/modal-content'); ?>
-  <button id="cerrar">Cerrar</button>
-</dialog>
-
 <a href="https://wa.me/+56998188978" target="_blank" class="fixed bottom-4 right-4 bg-[#25D366] w-12 h-12 rounded-full grid place-content-center shadow-md hover:bg-[#075E54] transition-all border-white border-2">
 	<img src="<?php bloginfo('template_url'); ?>/images/whatsapp.svg" alt="whatsapp" class="w-6 h-6">
 </a>
