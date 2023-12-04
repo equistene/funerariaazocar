@@ -1,17 +1,5 @@
 (function ($) {
-  $(document).ready(function () {
-    let mostar = document.getElementById("mostrar");
-    let cerrar = document.getElementById("cerrar");
-    let dialogo = document.getElementById("dialogo");    
-
-    mostrar.addEventListener("click", function () {
-      dialogo.showModal();
-    });
-
-    // Form cancel button closes the dialog box
-    cerrar.addEventListener("click", function () {
-      dialogo.close();
-    });
+  $(document).ready(function () {    
 
     const divToMakeSticky = document.getElementById("header");
 
