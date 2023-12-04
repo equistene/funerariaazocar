@@ -626,5 +626,13 @@ a.card-service{
   }
   .slick-list{
     overflow: hidden !important;
+    .slick-track{
+      img{
+        &:only-child{
+          display: none;
+        }
+      }
+    }
   }
 }
+

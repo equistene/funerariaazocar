@@ -70,8 +70,8 @@
       infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: true,
-      arrows: true,
+      dots: false,
+      arrows: false,
       fade: true,
       asNavFor: '.js-gallery-model-thumbnails'
     });
