@@ -1360,6 +1360,26 @@
                             "append": ""
                         },
                         {
+                            "key": "field_656d1f573e242",
+                            "label": "Titulo caracteristica",
+                            "name": "titulo_caracteristica",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_6541bfe2f62c4",
                             "label": "Características",
                             "name": "caracteristicas",
@@ -1520,5 +1540,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701649827
+    "modified": 1701652000
 }
