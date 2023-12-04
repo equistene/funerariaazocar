@@ -22,7 +22,7 @@
                 <div class="js-gallery-model-thumbnails mt-4">
                 <?php if( have_rows('modelos') ): ?>
                     <?php while( have_rows('modelos') ): the_row(); ?>
-                        <img class="rounded-lg aspect-square object-cover mt-4 w-12 h-auto " src="<?php the_sub_field('imagen'); ?>" alt="Imagen">                            
+                        <img class="rounded-lg aspect-square object-cover mt-4 w-12 h-auto" src="<?php the_sub_field('imagen'); ?>" alt="Imagen">                            
                     <?php endwhile; ?>          
                 <?php endif; ?>    
                 </div>
