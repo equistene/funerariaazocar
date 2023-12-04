@@ -628,6 +628,12 @@ a.card-service{
     overflow: hidden !important;
     .slick-track{
       img{
+        opacity: 0.7;
+        border: 2px solid transparent;
+        &.slick-current {
+          opacity: 1;
+          border: 2px solid $primary;
+        }
         &:only-child{
           display: none;
         }
