@@ -19,10 +19,17 @@
                     <?php endwhile; ?>          
                 <?php endif; ?>    
                 </div>
+                <div class="js-gallery-model-thumbnails mt-4">
+                <?php if( have_rows('modelos') ): ?>
+                    <?php while( have_rows('modelos') ): the_row(); ?>
+                        <img class="rounded-lg aspect-square object-cover mt-4 w-24 h-auto " src="<?php the_sub_field('imagen'); ?>" alt="Imagen">                            
+                    <?php endwhile; ?>          
+                <?php endif; ?>    
+                </div>
             </div>            
         </div>      
         <div class="col col-span-1 md:col-span-1 md:pt-8">
-            <p class="font-bold">Este servicio incluye: </p>
+            <p class="font-bold"><?php the_sub_field('titulo_caracteristica'); ?></p>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 my-2 list-features">
                 <?php if( have_rows('caracteristicas') ): ?>
                     <?php while( have_rows('caracteristicas') ): the_row(); ?>
@@ -30,6 +37,22 @@
                     <?php endwhile; ?>          
                 <?php endif; ?>                            
             </ul>
+
+            <?php if( have_rows('grupo_caracteristicas') ): ?>
+                <?php while( have_rows('grupo_caracteristicas') ): the_row(); ?>
+                    <div class="block mb-8">
+                        <p class="font-bold"><?php the_sub_field('titulo'); ?></p>
+                        <?php if( have_rows('caracteristicas') ): ?>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 my-2 list-features">
+                            <?php while( have_rows('caracteristicas') ): the_row(); ?>
+                                <li><?php the_sub_field('caracteristica'); ?></li>
+                            <?php endwhile; ?>          
+                            </ul>
+                        <?php endif; ?>
+                    </div>                    
+                <?php endwhile; ?>          
+            <?php endif; ?>
+
         </div>
     </div>
   </div>

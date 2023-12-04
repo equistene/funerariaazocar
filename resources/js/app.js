@@ -67,12 +67,24 @@
     });
 
     $(".js-gallery-model").slick({
-      infinite: true,
+      infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
       arrows: true,
+      fade: true,
+      asNavFor: '.js-gallery-model-thumbnails'
     });
+
+    $('.js-gallery-model-thumbnails').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.js-gallery-model',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true
+    });
+
   });
 
   $(window).load(function () {});

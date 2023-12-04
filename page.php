@@ -110,7 +110,8 @@ if( have_rows('bloques') ):
 						$image = get_sub_field('imagen');		
 						$price = get_sub_field('precio');
 						$features = get_sub_field('caracteristicas');
-						get_template_part('template-parts/servicio-descripcion', "", array("name" => $name, "description" => $descripion, "image" => $image, "price" => $price, "features" => $features ));
+						$group = get_sub_field('grupo_caracteristicas');
+						get_template_part('template-parts/servicio-descripcion', "", array("name" => $name, "description" => $descripion, "image" => $image, "price" => $price, "features" => $features, "group" => $group));
 
         endif;
 
