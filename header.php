@@ -41,9 +41,9 @@
 	<header class="bg-gray-50 border-b-1 border-blue-950 shadow-md sticky top-0 z-50" id="header">		
 		<div class="bg-primary text-white">
 			<div class="header-bar flex justify-center items-center text-white">
-				<p class="hidden md:block">Abierto de lunes a domingo las 24 hrs del día</p>
-				<p>Asistencia Emergencias: <a href="tel:+56964536718">+56964536718</a></p>
-				<p class="hidden md:block">Llámanos al <a href="tel:+56223646000">+56223646000</a></p>				
+				<p class="hidden md:block"><?php the_field('top_horarios', 'option'); ?></p>
+				<p><?php the_field('top_emergencias', 'option'); ?></p>
+				<p class="hidden md:block"><?php the_field('top_telefono', 'option'); ?></p>				
 			</div>
 		</div>
 		<div class="container mx-auto flex justify-between items-center py-2">
