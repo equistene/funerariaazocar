@@ -14,7 +14,7 @@
               $icon = get_sub_field('icono');
               ?>
               <div class="card border hover:border-blue-950 rounded-md overflow-hidden max-w-md border-slate-200">                
-                <a href="<?php echo $link ?>" class="card-service">                  
+                <a href="<?php echo $link ?>" class="card-products">
                   <img src="<?php echo $icon; ?>" alt="<?php echo $title; ?>" class="h-12 w-auto object-contain">
                   <h2><?php echo $title; ?></h2>                  
                 </a>
