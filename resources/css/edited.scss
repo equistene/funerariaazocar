@@ -520,8 +520,8 @@ a.card-service{
   }
 }
 
-a.card-product{
-  @apply p-2 text-center;
+a.card-products{
+  @apply p-4 flex flex-col justify-center items-center gap-2;
 }
 
 .slider-services-colors{  
