@@ -49,6 +49,13 @@ if( have_rows('bloques') ):
 						$servicios = get_sub_field('servicios');
 						$adicional = get_sub_field('texto_adicional');
 						get_template_part('template-parts/slider-services', '', array('title' => $title, 'bajada' => $bajada, 'servicios' => $servicios, 'adicional' => $adicional));
+
+				elseif( get_row_layout() == 'botonera_productos'):
+						$title = get_sub_field('titulo');
+						$bajada = get_sub_field('bajada');
+						$servicios = get_sub_field('servicios');
+						$adicional = get_sub_field('texto_adicional');
+						get_template_part('template-parts/slider-productos', '', array('title' => $title, 'bajada' => $bajada, 'servicios' => $servicios, 'adicional' => $adicional));
 				
 
 				elseif( get_row_layout() == 'contenido_centrado'):
