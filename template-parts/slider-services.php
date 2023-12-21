@@ -5,7 +5,7 @@
       <p><?php echo $args['bajada']; ?></p>
     </div>
 
-    <div class="slider-services pt-5 md:pt-5">      
+    <div class="slider-services slider-services-colors pt-5 md:pt-5">      
       <?php if( have_rows('servicios') ): ?>
           <?php while( have_rows('servicios') ): the_row(); 
               $title = get_sub_field('titulo');

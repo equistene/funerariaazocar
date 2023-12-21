@@ -520,7 +520,11 @@ a.card-service{
   }
 }
 
-.slider-services{  
+a.card-product{
+  @apply p-2 text-center;
+}
+
+.slider-services-colors{  
   .card{    
     &:nth-child(1){     
       background-color: rgba($secondary, 5%);
