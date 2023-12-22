@@ -14,7 +14,12 @@
               </div>
               <p><?php the_sub_field('titulo'); ?></p>
 
-              <a href="<?php the_sub_field('boton_enlace') ;?>" class="button-fa-primary" onclick="ga('send', 'event', 'Enlaces', 'Click', '<?php the_sub_field('nombre_evento') ?>'); return true;"><?php the_sub_field('boton_texto') ;?></a>
+              <a 
+                href="<?php the_sub_field('boton_enlace') ;?>" 
+                class="button-fa-primary <?php the_sub_field('track-link'); ?>" 
+                onclick="ga('send', 'event', 'Enlaces', 'Click', '<?php the_sub_field('nombre_evento') ?>'); return true;">
+                  <?php the_sub_field('boton_texto') ;?>
+                </a>
             </div>
         <?php endwhile; ?>        
     <?php endif; ?>
