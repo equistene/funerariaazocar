@@ -41,7 +41,8 @@ if( have_rows('bloques') ):
 						$botonTexto = get_sub_field('boton_texto');
 						$botonLink = get_sub_field('boton_enlace');
 						$image = get_sub_field('imagen');
-            get_template_part('template-parts/hero-home', '', array('title' => $title, 'bajada' => $bajada, 'botonTexto' => $botonTexto, 'botonLink' => $botonLink, 'imagen' => $image));
+						$trackButton = get_sub_field('nombre_evento');
+            get_template_part('template-parts/hero-home', '', array('title' => $title, 'bajada' => $bajada, 'botonTexto' => $botonTexto, 'botonLink' => $botonLink, 'imagen' => $image, 'trackButton' => $trackButton));
 
 				elseif( get_row_layout() == 'botonera_servicios'):
 						$title = get_sub_field('titulo');

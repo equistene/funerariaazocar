@@ -7,7 +7,7 @@
       <div class="col text-center">
         <h2 class="text-3xl md:text-5xl mb-1 md:mb-2 text-primary gotham-bold"><?php echo $args['title']; ?></h2>
         <div class="text-xl leading-5 md:max-w-[40ch] mx-auto"><?php echo $args['bajada']; ?></div>
-        <a class="button-fa-primary max-w-[400px] mx-auto" href="<?php echo $args['botonLink']; ?>"><?php echo $args['botonTexto']; ?> →</a>
+        <a class="<?php echo $trackButton; ?>button-fa-primary max-w-[400px] mx-auto" href="<?php echo $args['botonLink']; ?>"><?php echo $args['botonTexto']; ?> →</a>
       </div>
     </div>
   </div>
